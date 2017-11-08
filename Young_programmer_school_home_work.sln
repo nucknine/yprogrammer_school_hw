@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_01_best_worker", "Linq_01\Linq_01_best_worker.csproj", "{240F93BC-3FEA-45E9-B8E9-A08F7979E149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workers_EntityFrameork_codefirst", "Workers_EntityFrameork_codefirst\Workers_EntityFrameork_codefirst.csproj", "{3C0905EC-09C2-434E-8E00-5ED89B20B637}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{240F93BC-3FEA-45E9-B8E9-A08F7979E149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240F93BC-3FEA-45E9-B8E9-A08F7979E149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240F93BC-3FEA-45E9-B8E9-A08F7979E149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240F93BC-3FEA-45E9-B8E9-A08F7979E149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A55305CA-6389-4445-A1B0-1E516DAB40AD}
+	EndGlobalSection
+EndGlobal
