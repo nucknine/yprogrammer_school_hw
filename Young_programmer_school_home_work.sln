@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq_01_best_worker", "Linq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workers_EntityFrameork_codefirst", "Workers_EntityFrameork_codefirst\Workers_EntityFrameork_codefirst.csproj", "{3C0905EC-09C2-434E-8E00-5ED89B20B637}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetStore", "InternetStore\InternetStore.csproj", "{3424D011-904C-4D4B-ABAB-7C7BB80B44B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C0905EC-09C2-434E-8E00-5ED89B20B637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3424D011-904C-4D4B-ABAB-7C7BB80B44B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3424D011-904C-4D4B-ABAB-7C7BB80B44B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3424D011-904C-4D4B-ABAB-7C7BB80B44B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3424D011-904C-4D4B-ABAB-7C7BB80B44B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
