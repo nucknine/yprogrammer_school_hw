@@ -1,0 +1,13 @@
+﻿@model IEnumerable<InternetStore.Models.Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Доступные категории товаров: </h2>
+<ul>
+    @foreach(var item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse/", new {category = item.Name })</li>
+    }
+</ul>
+

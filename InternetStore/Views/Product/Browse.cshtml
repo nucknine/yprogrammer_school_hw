@@ -1,0 +1,14 @@
+﻿@model IEnumerable<InternetStore.Models.Item>
+@{
+    ViewBag.Title = "Browse";
+}
+
+<h2>Browse</h2>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="text-primary" style="min-height:40px; width: 20%; border-radius: 5px; border-bottom: 2px solid salmon; line-height:40px; display: block; vertical-align:middle;">
+           @Html.ActionLink(item.Title, "Details/", new { id = item.ItemId })
+        </div>
+    }
+</div>

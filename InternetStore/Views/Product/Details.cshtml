@@ -1,0 +1,22 @@
+﻿@model InternetStore.Models.Item
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<table>
+    <tr>
+        <td>Название</td>
+        <td>@Model.Title</td>        
+    </tr>    
+    <tr>
+        <td>Описание</td>
+        <td>@Model.ItemDescription</td>
+    </tr>
+    <tr>
+        <td>Цена</td>
+        <td>@Model.Price</td>
+    </tr>
+</table>
+<img src="\@Model.ItemArtUrl" />
+

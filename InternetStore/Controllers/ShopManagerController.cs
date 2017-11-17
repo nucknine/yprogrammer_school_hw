@@ -10,7 +10,8 @@ using InternetStore.Models;
 
 namespace InternetStore.Controllers
 {
-    public class ItemsController : Controller
+    //[Authorize(Users = "test@test.ru")]
+    public class ShopManagerController : Controller
     {
         private StoreEntities db = new StoreEntities();
 
