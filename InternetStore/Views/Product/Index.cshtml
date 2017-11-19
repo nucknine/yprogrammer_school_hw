@@ -3,6 +3,62 @@
     ViewBag.Title = "Index";
 }
 
+@section scripts
+{
+    <script>
+        $('#Search').on('keyup paste',
+            function () {
+                console.log($(this).val());
+                if ($(this).val().length != 0)
+                var obj = {
+                    searchName: $(this).val()
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: '/Product/Search',
+                    data: JSON.stringify(obj),
+                    contentType: 'application/json; charset=UTF-8',
+                    success: function (response) {
+                        console.log(response);
+                        var trHtml = response.map(function (el) {
+                            return createTr(el);
+                        }).join("");
+                        $('#ourtable tbody').html(trHtml);
+                    },
+                    error: function (response) {
+                        console.log(response);
+                    }
+                });
+            });
+
+        function createTr(item) {
+            return '<tr><td><a href="Browse/?category=' + item.Name +'">' +
+                item.Name +
+                '</a></td><td>';
+        }
+                
+    </script>
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Быстрый поиск по доступным категориям: </h2>
+<input class="form-control" style="margin: 15px" id="Search" name="Search" type="text" />
+<table class="table" id="ourtable">
+    <thead>
+        <tr>
+            <th>
+                Результаты поиска:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>        
+    </tbody>
+</table>
+
 <h2>Доступные категории товаров: </h2>
 <ul>
     @foreach(var item in Model)

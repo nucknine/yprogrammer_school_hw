@@ -41,5 +41,13 @@ namespace InternetStore.Controllers
             
             return View(ItemModel);
         }
+
+        [HttpPost]
+        
+        public JsonResult Search(string searchName)
+        {
+            var categories = db.Categories.Where(x => x.Name.Contains(searchName)).ToList();
+            return new JsonResult { Data = categories };
+        }
     }
 }
